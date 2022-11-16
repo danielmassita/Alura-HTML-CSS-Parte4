@@ -158,6 +158,7 @@ td, th {
 	text-align: center;
 	font-size: 2em; /*2x o tamanho padrão em pixels*/
 	margin: 0 0 1em; /*1x o tamanho padrão referente ao 2x o título principal*/
+	clear: left; /*vai limpar o erro de formatação do float, pra linha abaixo não sobrepor*/
 }
 
 .principal p { /*CSS vai atuar sobre a classe .principal && os marcadores de parágrafo p*/
@@ -170,6 +171,14 @@ td, th {
 
 .principal em {
 	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	/* Como posicionar a imagem no cantinho com o texto em volta? O DISPLAY (de inline para inline-block) não resolve, pois teríamos que mudar todos os parágrafos e iríamos alterar o elemento padrão. POSITION (relativo no ponto inicial no superior esquerdo, e andar com a imagem. absolute seria em relação à página, mas a imagem iria 'levantar' e desolcar do texto.) Vamos usar FLOAT = deslocar da página ('levantado') mas o espaço continua sendo ocupado. 
+	*/
+	float: left;
+	margin: 0 20px 20px 0; /*up, right, down, left*/
 }
 
 .imagembeneficios {
