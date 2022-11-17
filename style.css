@@ -306,7 +306,19 @@ img ~ p {
 */
 
 @media screen and (max-width: 480px) {
-	body {
-		background: red;
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	} /*Necessário corrigir a largura fixa do vídeo de 560px pra 100%*/
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
 	}
 }
