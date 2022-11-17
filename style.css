@@ -165,6 +165,21 @@ td, th {
 	clear: left; /*vai limpar o erro de formatação do float, pra linha abaixo não sobrepor*/
 }
 
+.titulo-principal:first-letter {
+	font-weight: bold;
+}
+
+/*p:first-line {
+	font-style: italic;
+} deixará a primeira linha de todos os parágrafos em itálico, para fins editoriais*/
+
+.titulo-principal:before {
+	content: "[ "; /*Elemento textual não selecionável (pois não está no html) e exclusivo do CSS*/
+}
+.titulo-principal:after {
+	content: " ]";
+}
+
 .principal {
 	padding: 3em 0;
 	background: #FEFEFE;
@@ -238,6 +253,10 @@ td, th {
 
 .itens:first-child { /*Podemos usar um pseudo-elemento pra marcar sem alterar o html com nova classe, com :first-child :last-child :nth-child(n) onde n é o elemento com base inicial 1*/
 	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊"
 }
 
 .imagem-beneficios {
