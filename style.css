@@ -267,3 +267,23 @@ td, th {
 	width: 560px;
 	margin: 2em auto; /*1 espaço cima-baixo e auto nas laterais=centro*/
 }
+/*
+main p {
+	background: red; /*Esse CSS iria deixar todos os p's do main em vermelho, mas queremos apenas um elemento P, ignorando os demais 
+}*/
+
+main > p {
+	background: red; /*Vai pegar o elemento FILHO-DIRETO da main, ou seja, o P, e não os NETOS-DIRETOS da main, que são os demais p'ss*/
+}
+
+img + p {
+	background: blue; /*Imagem com Parágrafo irmão, ou seja, que vem ao lado/logo após, no caso IMG e com um P logo após, nessa ordem...*/
+}
+
+img ~ p {
+	background: yellow; /*Imagem com Parágrafo irmão, ou seja, que vem ao lado/logo após...*/
+}
+
+.principal p:not(#missao) {
+	background: orange; /*Todos os parágrafos de principal EXCETO o id#missao...*/
+}
