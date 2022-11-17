@@ -95,8 +95,8 @@ footer {
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+/*	width: 940px;
+	margin: 0 auto;    */
 }
 
 form {
@@ -165,6 +165,13 @@ td, th {
 	clear: left; /*vai limpar o erro de formatação do float, pra linha abaixo não sobrepor*/
 }
 
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
 .principal p { /*CSS vai atuar sobre a classe .principal && os marcadores de parágrafo p*/
 	margin: 0 0 1em; 	
 }
@@ -185,12 +192,20 @@ td, th {
 	margin: 0 20px 20px 0; /*up, right, down, left*/
 }
 
-.imagembeneficios {
-	width: 60%;
-}
-
 .mapa {
 	padding: 3em 0; /*up-down left-right*/
+	/*background: red;
+	width: 940px;
+	margin: 0 auto;
+	background: linear-gradient(orange, blue);
+	background: linear-gradient(45deg, orange, blue, red, black); direção degrees
+	background: radial-gradient(orange, blue, red, black); auto % cores */ 
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
 }
 
 .mapa p {
@@ -198,7 +213,38 @@ td, th {
 	text-align: center;
 }
 
+.beneficios {
+	padding: 3em 0; /*up-down left-right*/
+	background: #888888; 
+	/*width: 940px;
+	margin: 0 auto; pois já temos abaixo a largura do elemento e o carregamento no meio do vídeo*/
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block; /*lista = inline, mas item é elemento block e ocupa 100% largura MAS DETALHE o display: inline-block precisa ESTAR COLADO entre elementos da lista e a imagem, ou seja, <ul>...</ul><img> na mesma linha*/ 
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5em; /*Espaçamento entre linhas*/
+
+}
+
+.itens:first-child { /*Podemos usar um pseudo-elemento pra marcar sem alterar o html com nova classe, com :first-child :last-child :nth-child(n) onde n é o elemento com base inicial 1*/
+	font-weight: bold;
+}
+
+.imagem-beneficios {
+	width: 60%;
+}
+
 .video {
 	width: 560px;
-	margin: 1em auto; /*1 espaço cima-baixo e auto nas laterais=centro*/
+	margin: 2em auto; /*1 espaço cima-baixo e auto nas laterais=centro*/
 }
