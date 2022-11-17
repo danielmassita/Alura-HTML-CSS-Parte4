@@ -201,6 +201,7 @@ td, th {
 
 .utensilios {
 	width: 120px;
+	width: calc(40% - (256px));
 	/* Como posicionar a imagem no cantinho com o texto em volta? O DISPLAY (de inline para inline-block) não resolve, pois teríamos que mudar todos os parágrafos e iríamos alterar o elemento padrão. POSITION (relativo no ponto inicial no superior esquerdo, e andar com a imagem. absolute seria em relação à página, mas a imagem iria 'levantar' e desolcar do texto.) Vamos usar FLOAT = deslocar da página ('levantado') mas o espaço continua sendo ocupado. 
 	*/
 	float: left;
@@ -267,23 +268,26 @@ td, th {
 	width: 560px;
 	margin: 2em auto; /*1 espaço cima-baixo e auto nas laterais=centro*/
 }
+
 /*
 main p {
-	background: red; /*Esse CSS iria deixar todos os p's do main em vermelho, mas queremos apenas um elemento P, ignorando os demais 
-}*/
+	background: red; /*Esse CSS iria deixar todos os p's do main em vermelho, mas queremos apenas um elemento P, ignorando os demais...
+}
 
 main > p {
-	background: red; /*Vai pegar o elemento FILHO-DIRETO da main, ou seja, o P, e não os NETOS-DIRETOS da main, que são os demais p'ss*/
+	background: red; /*Vai pegar o elemento FILHO-DIRETO da main, ou seja, o P, e não os NETOS-DIRETOS da main, que são os demais p'ss...
 }
 
 img + p {
-	background: blue; /*Imagem com Parágrafo irmão, ou seja, que vem ao lado/logo após, no caso IMG e com um P logo após, nessa ordem...*/
+	background: blue; /*Imagem com Parágrafo irmão, ou seja, que vem ao lado/logo após, no caso IMG e com um P logo após, nessa ordem...
 }
 
 img ~ p {
-	background: yellow; /*Imagem com Parágrafo irmão, ou seja, que vem ao lado/logo após...*/
+	background: yellow; /*Imagem com Parágrafo irmão, ou seja, que vem ao lado/logo após...
 }
 
 .principal p:not(#missao) {
-	background: orange; /*Todos os parágrafos de principal EXCETO o id#missao...*/
+	background: orange; /*Todos os parágrafos de principal EXCETO o id#missao...
 }
+*/
+
